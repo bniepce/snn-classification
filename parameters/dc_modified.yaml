@@ -1,0 +1,19 @@
+name: KAPTIOS-SNN-CLASSIFICATION
+network: 
+  n_input: 784
+  dt: 1.0
+  n_neurons: 100
+  w_exc_strength: 22.5
+  w_inh_strength: 17.5
+  nu: !!python/tuple [1e-4, 1e-2]
+  wmin: 0.0
+  wmax: 1.0
+  norm: 78.4
+  theta_plus: 0.05
+  tc_theta_decay: 1e7
+  input_shape: !!python/tuple [1, 28, 28]
+  time: 250
+
+training:
+  epochs: 10
+  n_classes: 10
